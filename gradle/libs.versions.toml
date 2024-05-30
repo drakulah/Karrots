@@ -1,0 +1,73 @@
+[versions]
+agp = "8.3.2"
+room = "2.6.1"
+ktor = "2.2.4"
+media3 = "1.3.1"
+junit = "4.13.2"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junitExt = "1.1.5"
+ksp = "1.9.0-1.0.13"
+paletteKtx = "1.0.0"
+coilCompose = "2.4.0"
+espressoCore = "3.5.1"
+pagingCompose = "3.3.0"
+activityCompose = "1.9.0"
+composeBom = "2024.05.00"
+navigationCompose = "2.7.7"
+lifecycleRuntimeKtx = "2.7.0"
+
+[libraries]
+
+# Room
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+
+# KTOR
+ktor-client-cio = { group = "io.ktor", name = "ktor-client-cio", version.ref = "ktor" }
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-client-encoding = { group = "io.ktor", name = "ktor-client-encoding", version.ref = "ktor" }
+ktor-client-content-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor" }
+
+# Media3
+media3-muxer = { group = "androidx.media3", name = "media3-muxer", version.ref = "media3" }
+media3-common = { group = "androidx.media3", name = "media3-common", version.ref = "media3" }
+media3-effect = { group = "androidx.media3", name = "media3-effect", version.ref = "media3" }
+media3-session = { group = "androidx.media3", name = "media3-session", version.ref = "media3" }
+media3-decoder = { group = "androidx.media3", name = "media3-decoder", version.ref = "media3" }
+media3-exoplayer = { group = "androidx.media3", name = "media3-exoplayer", version.ref = "media3" }
+media3-transformer = { group = "androidx.media3", name = "media3-transformer", version.ref = "media3" }
+
+# Coil
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coilCompose" }
+
+# UI
+ui-core = { group = "androidx.compose.ui", name = "ui" }
+ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+
+# JUnit
+junit-core = { group = "junit", name = "junit", version.ref = "junit" }
+junit-ext = { group = "androidx.test.ext", name = "junit", version.ref = "junitExt" }
+
+# Compose
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-materiaIcons = { group = "androidx.compose.material", name = "material-icons-extended" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+compose-paging = { group = "androidx.paging", name = "paging-compose", version.ref = "pagingCompose" }
+compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+
+# KTX
+ktx-core = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+ktx-palette = { group = "androidx.palette", name = "palette-ktx", version.ref = "paletteKtx" }
+ktx-lifecycleRuntime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+
+# Others
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+[plugins]
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
